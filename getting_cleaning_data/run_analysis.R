@@ -73,7 +73,7 @@ rm(dat_te, act_te, sbj_te)
 full_data = rbind(x_tr, x_te)
 rm(x_te, x_tr)
 # save dataset
-write.csv(full_data, "train_test_dataset.csv")
+#write.table(full_data, "train_test_dataset.csv")
 
 
 # From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
@@ -83,5 +83,5 @@ require(reshape2)
 df_melt <- melt(full_data, id = c("activity", "subject"))
 mean_data <- df_melt %>%  dcast(activity + subject ~ variable, mean)  
 # save dataset
-write.csv(mean_data, "train_test_mean_dataset.csv")
+write.table(mean_data, "train_test_mean_dataset.txt", row.name = FALSE)
 
