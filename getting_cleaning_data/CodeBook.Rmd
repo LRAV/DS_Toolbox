@@ -39,9 +39,13 @@ The set of variables that were estimated from these signals are:
 mean(): Mean value
 std(): Standard deviation
 
-The dataset also includes, for each observation, the activity and subject the data comes from.
+## Work done
 
-Activities can be any of the following
+So the train_test_dataset.csv file contains the merged data of the train and test sets from the original source. We had to take only the 2 measures mentioned above out of the 561 from the original source.  
+
+Later, we had to includes, for each observation, the activity and subject the data came from.
+
+Activities can be any of the following:
 WALKING
 WALKING_UPSTAIRS
 WALKING_DOWNSTAIRS
@@ -49,7 +53,7 @@ SITTING
 STANDING
 LAYING
 
-There were 30 subjects in this experiment
+There were 30 subjects in this experiment. The subject data is encoded as a number from 1 to 30.
 
 
 # CodeBook for variables of dataset "train_test_mean_dataset"

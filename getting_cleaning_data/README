@@ -1,0 +1,9 @@
+This repo contains the files used to transform the HCI HAR Dataset proposed in PA for week 4 of the Getting and Cleaning Data course. 
+
+The CodeBook.Rmd file specifies the variables of the target dataset. It also indicates the transformations needed and the information for the second target dataset needed to pass the PA.
+
+The run_analysis.R file is the script used to generate target datasets. 
+
+The train_test_dataset.csv file contains the data for the first dataset needed.
+
+The train_test_mean_dataset.csv file contains the data for the second dataset needed.
